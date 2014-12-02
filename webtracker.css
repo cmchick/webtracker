@@ -1,0 +1,16 @@
+#keyboard div {
+	color: black;
+	background-color: white;
+	border: 1px solid black;
+}
+#keyboard div:hover {
+	color: white;
+	background-color: black;
+	border-color: white;
+}
+#channel  > label:hover {
+	background-color: lightgray;
+}
+#nomidi {
+	display: none;
+}

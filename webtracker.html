@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Tracker</title>
+    <meta charset='UTF-8'>
+    <script defer src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script defer src='http://cwilso.github.com/WebMIDIAPIShim/WebMIDIAPI.js'></script>
+    <script defer src='webtracker.js'></script>
+    <link rel=stylesheet type='text/css' href='webtracker.css'>
+  </head>
+  <body>
+    <div>Output Device:<select id='midiOut'>
+			<option>Not connected</option>
+		</select>
+		<div id='channel'>Output Channels:
+      <label>1<input checked type=checkbox value='0'></label>
+      <label>2<input type=checkbox value='1'></label>
+      <label>3<input type=checkbox value='2'></label>
+      <label>4<input type=checkbox value='3'></label>
+      <label>5<input type=checkbox value='4'></label>
+      <label>6<input type=checkbox value='5'></label>
+      <label>7<input type=checkbox value='6'></label>
+      <label>8<input type=checkbox value='7'></label>
+      <label>9<input type=checkbox value='8'></label>
+      <label>10<input type=checkbox value='9'></label>
+      <label>11<input type=checkbox value='10'></label>
+      <label>12<input type=checkbox value='11'></label>
+      <label>13<input type=checkbox value='12'></label>
+      <label>14<input type=checkbox value='13'></label>
+      <label>15<input type=checkbox value='14'></label>
+      <label>16<input type=checkbox value='15'></label>
+    </div>
+  </div>
+    <div id='keyboard'>Not initialized</div>
+    <div id='nomidi'>
+      <div>Please enable Web MIDI functionality or otherwise update your browser, or install the <a href="http://jazz-soft.net/download/">Jazz-Plugin</a></div>
+      <div>For Chrome/Chromium there is an experimental setting at chrome://flags/#enable-web-midi</div>
+    </div>
+  </body>
+</html>
